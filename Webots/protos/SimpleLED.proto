@@ -1,0 +1,27 @@
+#VRML_SIM R2023a utf8
+PROTO SimpleLED [
+    field SFString name "led0"
+    field MFColor color [
+        1 0 0
+    ]
+    field SFVec3f translation 0 0 0
+]
+{
+    LED {
+        translation IS translation
+        children [
+            Shape {
+                appearance Appearance {
+                    material Material {
+                        diffuseColor 0.5 0.5 0.5
+                    }
+                }
+                geometry Sphere {
+                    radius 0.01
+                }
+            }
+        ]
+        name IS name
+        color IS color
+    }
+}

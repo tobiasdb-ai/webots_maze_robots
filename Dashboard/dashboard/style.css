@@ -1,0 +1,67 @@
+#dashboardContainer {
+    display: flex;
+}
+
+#canvasContainer {
+    position: relative;
+}
+
+#coordinatesContainer {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+    margin-left: 10px;
+    background-color: rgb(153, 156, 156);
+    padding: 10px;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: rgb(47, 0, 255);
+}
+
+.green {
+    color: rgb(0, 255, 76);
+}
+
+.yellow {
+    color: rgb(229, 255, 0);
+}
+
+#queueContainer {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#completedContainer {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+#coordinatesContainer {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+    margin-left: 10px;
+    background-color: rgb(153, 156, 156);
+    padding: 10px;
+    border-radius: 5px; /* Add border radius */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add box shadow */
+}
+
+
+
+#queueContainer {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    background-color: rgb(153, 156, 156); /* Match the background color */
+    padding: 10px;
+    border-radius: 5px; /* Add border radius */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add box shadow */
+}

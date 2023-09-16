@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href=".\style.css">
+	<body>
+		<div id="dashboardContainer">
+			<div id="canvasContainer">
+				<canvas id="theCanvas" style="background-color: darkblue"></canvas>
+				<div id="coordinatesContainer">
+					<div>
+						Available units:
+					</div>
+					<span id="bot1" class="red">bot1:</span>
+					<span id="bot1Coordinates"></span><br>
+					<span id="bot2" class="green">bot2:</span>
+					<span id="bot2Coordinates"></span><br>
+					<span id="bot3" class="blue">bot3:</span>
+					<span id="bot3Coordinates"></span><br>
+					<span id="bot4" class="yellow">bot4:</span>
+					<span id="bot4Coordinates"></span>
+	
+				</div>
+			</div>
+		</div>
+	
+		<div id="myDiv" style="background-color: darkgray">
+			<span>Send </span>
+			<input type="text" id="unit" size="6" placeholder="Unit">
+			<span> to location</span>
+			<input type="text" id="target" size="6" placeholder="x;y">
+			<button id="sendButton">Send Command</button>
+		</div>
+	
+		<div id="myDiv1" style="background-color: lightgrey;">
+			<span>Pick up from </span>
+			<input type="text" id="origin" size="6" placeholder="x;y">
+			<span> and deliver to </span>
+			<input type="text" id="target2" size="6" placeholder="x;y">
+			<button onclick="addToQueue()">Add to queue</button>
+			<div id="queueContainer"></div>
+		</div>
+	
+		<div id="completedContainer" style="background-color: lightblue;">
+			<h2>Completed Tasks:</h2>
+		</div>
+	
+		<div id="myDiv2" style="background-color: darkgray">
+			<button onclick="noodstop()">STOP</button>
+		</div>
+		<script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+		<script src="./app.js"></script>
+	</body>
+</html>
